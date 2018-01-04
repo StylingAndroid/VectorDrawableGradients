@@ -1,0 +1,5 @@
+<resources>
+  <string name="app_name">VectorDrawable Gradients</string>
+  <string name="linear">Linear</string>
+  <string name="steps">Steps</string>
+</resources>
