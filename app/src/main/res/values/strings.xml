@@ -2,4 +2,6 @@
   <string name="app_name">VectorDrawable Gradients</string>
   <string name="linear">Linear</string>
   <string name="steps">Steps</string>
+  <string name="radial">Radial</string>
+  <string name="sweep">Sweep</string>
 </resources>

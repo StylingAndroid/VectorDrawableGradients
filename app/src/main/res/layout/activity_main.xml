@@ -13,7 +13,7 @@
     android:adjustViewBounds="true"
     android:contentDescription="@null"
     android:src="@drawable/linear"
-    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintBottom_toTopOf="@id/radial"
     app:layout_constraintEnd_toStartOf="@id/steps"
     app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintTop_toTopOf="parent" />
@@ -35,7 +35,7 @@
     android:adjustViewBounds="true"
     android:contentDescription="@null"
     android:src="@drawable/steps"
-    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintBottom_toTopOf="@id/sweep"
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintStart_toEndOf="@id/linear"
     app:layout_constraintTop_toTopOf="parent" />
@@ -49,5 +49,49 @@
     app:layout_constraintEnd_toEndOf="@id/steps"
     app:layout_constraintStart_toStartOf="@id/steps"
     app:layout_constraintTop_toBottomOf="@id/steps" />
+
+  <ImageView
+    android:id="@+id/radial"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:adjustViewBounds="true"
+    android:contentDescription="@null"
+    android:src="@drawable/radial"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toStartOf="@id/steps"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/linear" />
+
+  <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:text="@string/radial"
+    android:textColor="?android:attr/colorAccent"
+    app:layout_constraintEnd_toEndOf="@id/radial"
+    app:layout_constraintStart_toStartOf="@id/radial"
+    app:layout_constraintTop_toBottomOf="@id/radial" />
+
+  <ImageView
+    android:id="@+id/sweep"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:adjustViewBounds="true"
+    android:contentDescription="@null"
+    android:src="@drawable/sweep"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toEndOf="@id/linear"
+    app:layout_constraintTop_toBottomOf="@id/steps" />
+
+  <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:text="@string/sweep"
+    android:textColor="?android:attr/colorAccent"
+    app:layout_constraintEnd_toEndOf="@id/sweep"
+    app:layout_constraintStart_toStartOf="@id/sweep"
+    app:layout_constraintTop_toBottomOf="@id/sweep" />
 
 </android.support.constraint.ConstraintLayout>
